@@ -1,10 +1,10 @@
 package studentskiSistem;
 
-import java.util.List;
-import java.util.Scanner;
+import
+java.util.*;
 
 public class StudentskiSistem {
-	private static List<Student> studenti;
+	private static List<Student> studenti = new ArrayList<>(); 
 	private static Scanner tastatura = new Scanner(System.in);
 	
 	public static void dodajStudenta() {

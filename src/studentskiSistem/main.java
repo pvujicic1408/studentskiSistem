@@ -19,6 +19,11 @@ public class main {
 			
 			OpcijeMenija izabranaOpcija = OpcijeMenija.izOpcije(opcija);
 			
+			 if (izabranaOpcija == null) {
+	                System.out.println("Pogresan unos! Pokusajte ponovo.");
+	                continue;
+	            }
+			
 			switch(izabranaOpcija) {
 			case DODAJ_STUDENTA:
 				 StudentskiSistem.dodajStudenta();
@@ -31,8 +36,9 @@ public class main {
 				break;
 			case IZLAZ:
 				System.out.print("Izlaz");
-				tastatura.close();
 				return;
+			default:
+                System.out.println("Pogresna opcija.");
 			}
 		}		
 	}

@@ -6,7 +6,7 @@ public enum OpcijeMenija {
     PRIKAZI_STUDENTE_SA_PROSEKOM(3),
     IZLAZ(4);
 	
-	private final int opcija;
+	private int opcija;
 	
 	OpcijeMenija (int opcija) {
 		this.opcija=opcija;
