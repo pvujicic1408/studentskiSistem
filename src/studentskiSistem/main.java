@@ -17,22 +17,22 @@ public class main {
 			int opcija=tastatura.nextInt();
 			tastatura.nextLine();
 			
-			switch(opcija) {
-			case 1:
+			OpcijeMenija izabranaOpcija = OpcijeMenija.izOpcije(opcija);
+			
+			switch(izabranaOpcija) {
+			case DODAJ_STUDENTA:
 				 StudentskiSistem.dodajStudenta();
 				break;
-			case 2:
+			case PRIKAZI_SVE_STUDENTE:
 				StudentskiSistem.prikaziSveStudente();
 				break;
-			case 3:
+			case PRIKAZI_STUDENTE_SA_PROSEKOM:
 				StudentskiSistem.prikaziStudenteSaProsekomIznad();
 				break;
-			case 4:
+			case IZLAZ:
 				System.out.print("Izlaz");
 				tastatura.close();
 				return;
-			default:
-				System.out.println("Pogresan unos. Pokusajte ponovo.");
 			}
 		}		
 	}
